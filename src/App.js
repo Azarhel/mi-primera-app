@@ -1,9 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
 import logo from './logo.svg';
 import './App.css';
 {
   /* The following line can be included in your src/index.js or App.js file */
 }
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -11,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   crossorigin="anonymous"
 />
 /* The following line can be included in your src/index.js or App.js file */
-import './App.scss';
+
 
 function App() {
   return (
