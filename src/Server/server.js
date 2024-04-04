@@ -1,4 +1,4 @@
-import router from "./router";
+var router = require("./router");
 
 const express = require('express');
 const morgan = require('morgan');
@@ -13,4 +13,4 @@ app.use(express.json()); // set the middleware to read json request
 app.use(express.urlencoded({ extended: true })); // set the middleware to read form data
 
 const server = router(app);
-export default server;
+module.exports = server;

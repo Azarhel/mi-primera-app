@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.3",
+    "concurrently": "^8.2.2",
     "edge-js": "^21.7.2",
     "express": "^4.19.2",
     "react": "^18.2.0",
@@ -17,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start && node /server/App.js",
+    "start": "concurrently \"react-scripts start\" \"node src/server/App.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
