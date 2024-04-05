@@ -1,3 +1,6 @@
+import axios from "axios";
+import { useEffect, useState } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import logo from './logo.svg';
@@ -14,8 +17,27 @@ import './App.css';
 />
 /* The following line can be included in your src/index.js or App.js file */
 
+const client = axios.create({
+   baseURL: "http://localhost:4000/" 
+});
 
 function App() {
+
+  const [respuesta, setRespuesta] = useState({});
+
+
+  useEffect(() => {
+
+    const obtenerRespuesta = async () => {
+      let respuestaDelApi = await client.get('api/v1/contacto');
+      setRespuesta(respuestaDelApi);
+    };
+
+    obtenerRespuesta();
+  }, []);
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -31,6 +53,13 @@ function App() {
         >
           Learn React
         </a>
+        
+        <ul>
+          <li> Nombre : {respuesta?.nombre}</li>
+          <li> Email : {respuesta?.email}</li>
+          <li> Mensaje : {respuesta?.mensaje}</li>
+        </ul>
+        
       </header>
     </div>
   );
