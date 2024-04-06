@@ -1,45 +1,37 @@
-// Importa React y las dependencias necesarias
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Asegúrate de que Bootstrap esté instalado
-import './App.css'; // Estilos generales de tu App
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Componentes de react-router-dom
-import NavigationBar from './Navegacion/NavigationBar'; // Tu componente de barra de navegación
-import Home from './Paginas/Home'; // Componente de la página de inicio
-import About from './Paginas/About'; // Componente de la página de acerca de
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavigationBar from './Navegacion/NavigationBar';
+import Home from './Paginas/Home';
+import About from './Paginas/About';
 
-// Importa las imágenes desde la carpeta src/images
-import image1 from './images/image1.jpg';
-import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+  crossorigin="anonymous"
+/>
 
-function App() {
+/* The following line can be included in your src/index.js or App.js file */
+
+
+
+export function App() {
+
   return (
     <div>
       <BrowserRouter>
-        <NavigationBar /> {/* Muestra tu barra de navegación en todas las páginas */}
+        <NavigationBar />
         <Routes>
-          {/* Define tus rutas y los componentes que deben renderizarse */}
-          <Route path='/' element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path='/' element={<NavigationBar />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+          </Route>
         </Routes>
       </BrowserRouter>
-      {/* Carrusel de Bootstrap con tus imágenes */}
-      <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={image1} className="d-block w-100" alt="Imagen 1" />
-          </div>
-          <div className="carousel-item">
-            <img src={image2} className="d-block w-100" alt="Imagen 2" />
-          </div>
-          <div className="carousel-item">
-            <img src={image3} className="d-block w-100" alt="Imagen 3" />
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
 
 export default App;
-
