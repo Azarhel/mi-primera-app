@@ -30,6 +30,8 @@ function App() {
 
     const obtenerRespuesta = async () => {
       let respuestaDelApi = await client.get('api/v1/contacto');
+      console.log(respuestaDelApi)
+      setRespuesta(respuestaDelApi.data)
       setRespuesta(respuestaDelApi);
     };
 
