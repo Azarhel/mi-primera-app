@@ -5,8 +5,8 @@ const Home = () => {
     <div>
         <br></br>
         <br></br>
-      <h1>Bienvenido a nuestra página</h1>
-      <p>¡Gracias por visitarnos!</p>
+      <h1>OS-CAR FOTOGRAFÍA</h1>
+      <p>Expande tu visión a través del mejor lente de fotos.</p>
       {/* Otro contenido de la página de inicio */}
     </div>
   );

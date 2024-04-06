@@ -1,37 +1,51 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss';
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavigationBar from './Navegacion/NavigationBar';
-import Home from './Paginas/Home';
-import About from './Paginas/About';
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-  crossorigin="anonymous"
-/>
+// Imágenes para el carrusel
+import image1 from './path-to-your-image1.jpg';
+import image2 from './path-to-your-image2.jpg';
+import image3 from './path-to-your-image3.jpg';
 
-/* The following line can be included in your src/index.js or App.js file */
-
-
-
-function App() {
-
+function Home() {
   return (
     <div>
-      <BrowserRouter>
-        <NavigationBar />
-        <Routes>
-          <Route path='/' element={<NavigationBar />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image1}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Descripción de la primera imagen.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image2}
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Descripción de la segunda imagen.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={image3}
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Descripción de la tercera imagen.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
 }
 
-export default App;
+export default Home;
