@@ -1,13 +1,10 @@
-import axios from "axios";
-import { useEffect, useState } from 'react';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import logo from './logo.svg';
 import './App.css';
-{
-  /* The following line can be included in your src/index.js or App.js file */
-}
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavigationBar from './Navegacion/NavigationBar';
+import Home from './Paginas/Home';
+import About from './Paginas/About';
 
 <link
   rel="stylesheet"
@@ -15,52 +12,21 @@ import './App.css';
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
   crossorigin="anonymous"
 />
+
 /* The following line can be included in your src/index.js or App.js file */
-
-const client = axios.create({
-   baseURL: "http://localhost:4000/" 
-});
-
 function App() {
 
-  const [respuesta, setRespuesta] = useState({});
-
-
-  useEffect(() => {
-
-    const obtenerRespuesta = async () => {
-      let respuestaDelApi = await client.get('api/v1/contacto');
-      setRespuesta(respuestaDelApi);
-    };
-
-    obtenerRespuesta();
-  }, []);
-
-
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        
-        <ul>
-          <li> Nombre : {respuesta?.nombre}</li>
-          <li> Email : {respuesta?.email}</li>
-          <li> Mensaje : {respuesta?.mensaje}</li>
-        </ul>
-        
-      </header>
+    <div>
+      <BrowserRouter>
+        <NavigationBar />
+        <Routes>
+          <Route path='/' element={<NavigationBar />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+nav {
+  background-color: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+  background-color: #333; /* Cambia el color de fondo al hacer scroll */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+}
