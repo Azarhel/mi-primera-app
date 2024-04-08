@@ -1,10 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, RouterProvider } from "react-router-dom";
 import NavigationBar from './Navegacion/NavigationBar';
 import Home from './Paginas/Home';
 import About from './Paginas/About';
+import { router } from './router/AppRouter';
 
 <link
   rel="stylesheet"
@@ -21,7 +22,8 @@ export function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <RouterProvider router={router} />
+      {/* <BrowserRouter>
         <NavigationBar />
         <Routes>
           <Route path='/' element={<NavigationBar />}>
@@ -29,7 +31,7 @@ export function App() {
             <Route path="about" element={<About />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }
