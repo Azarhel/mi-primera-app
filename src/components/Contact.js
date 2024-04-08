@@ -16,7 +16,8 @@ const Contact = () => {
         <div className="flex items-center mb-4">
           <div className="w-1/4">Facebook:</div>
           <div className="w-3/4">
-            <a href="https://https://www.facebook.com/profile.php?id=61554374003677" className="text-white">Os-Car Fotografía</a>
+            {/* Asegúrate de que la URL es correcta */}
+            <a href="https://www.facebook.com/profile.php?id=61554374003677" className="text-white">Os-Car Fotografía</a>
           </div>
         </div>
         <div className="flex items-center mb-4">
@@ -31,7 +32,7 @@ const Contact = () => {
         </div>
         <div className="flex items-center mb-4">
           <div className="w-1/4">Dirección:</div>
-          <div className="w-3/4">Tamulté de las Sabanas, Centro, Tabaco.</div>
+          <div className="w-3/4">Tamulté de las Sabanas, Centro, Tabasco.</div>
         </div>
       </div>
     </div>
@@ -39,3 +40,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
