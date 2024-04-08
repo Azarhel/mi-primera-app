@@ -7,7 +7,7 @@ const Contact = () => {
         <h2 className="text-3xl font-bold mb-4">Contacto</h2>
         <div className="flex items-center mb-4">
           <div className="w-1/4">Nombre:</div>
-          <div className="w-3/4">Eddi Oscaldo</div>
+          <div className="w-3/4">Eddi Osvaldo</div>
         </div>
         <div className="flex items-center mb-4">
           <div className="w-1/4">Teléfono:</div>
@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="flex items-center mb-4">
           <div className="w-1/4">Facebook:</div>
           <div className="w-3/4">
-            <a href="https://www.facebook.com/eddioscaldo" className="text-white">Eddi Oscaldo</a>
+            <a href="https://www.facebook.com/profile.php?id=61554374003677" className="text-white">Eddi Oscaldo</a>
           </div>
         </div>
         <div className="flex items-center mb-4">
@@ -27,11 +27,11 @@ const Contact = () => {
         </div>
         <div className="flex items-center mb-4">
           <div className="w-1/4">Correo:</div>
-          <div className="w-3/4">eddioscaldo@example.com</div>
+          <div className="w-3/4">edd89.500@gmail.com</div>
         </div>
         <div className="flex items-center mb-4">
           <div className="w-1/4">Dirección:</div>
-          <div className="w-3/4">123 Calle Ficticia, Ciudad Imaginaria</div>
+          <div className="w-3/4">Tamulté de las Sabanas, Centro, Tabaco.</div>
         </div>
       </div>
     </div>
