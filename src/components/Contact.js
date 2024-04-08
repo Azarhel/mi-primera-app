@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="flex items-center mb-4">
           <div className="w-1/4">Facebook:</div>
           <div className="w-3/4">
-            <a href="https://www.facebook.com/Os-Car Fotografía" className="text-white">Eddi Oscaldo</a>
+            <a href="https://https://www.facebook.com/profile.php?id=61554374003677" className="text-white">Os-Car Fotografía</a>
           </div>
         </div>
         <div className="flex items-center mb-4">
