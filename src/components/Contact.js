@@ -16,14 +16,20 @@ const Contact = () => {
         <div className="flex items-center mb-4">
           <div className="w-1/4">Facebook:</div>
           <div className="w-3/4">
-            {/* Asegúrate de que la URL es correcta */}
             <a href="https://www.facebook.com/profile.php?id=61554374003677" className="text-white">Os-Car Fotografía</a>
           </div>
         </div>
         <div className="flex items-center mb-4">
           <div className="w-1/4">Instagram:</div>
           <div className="w-3/4">
-            <a href="https://www.instagram.com/eddiosvaldo" className="text-white">@eddiosvaldo</a>
+            {/* URL actualizada de Instagram */}
+            <a href="https://www.instagram.com/os_car_fotografia?igsh=MXB4aGcyMGw0MTFkNg==" className="text-white">@os_car_fotografia</a>
+          </div>
+        </div>
+        <div className="flex items-center mb-4">
+          <div className="w-1/4">TikTok:</div>
+          <div className="w-3/4">
+            <a href="https://www.tiktok.com/@os_car_fotografia?_t=8lMoejwLYXd&_r=1" className="text-white">Os-Car Fotografía</a>
           </div>
         </div>
         <div className="flex items-center mb-4">
@@ -40,4 +46,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
