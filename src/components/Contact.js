@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="flex items-center mb-4">
           <div className="w-1/4">Instagram:</div>
           <div className="w-3/4">
-            <a href="https://www.instagram.com/eddiosvaldo" className="text-white">@eddioscaldo</a>
+            <a href="https://www.instagram.com/eddiosvaldo" className="text-white">@eddiosvaldo</a>
           </div>
         </div>
         <div className="flex items-center mb-4">
