@@ -19,7 +19,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('URL_DE_TU_API', formData);
+      const response = await axios.post('https://mi-primera-app-beta.vercel.app/', formData);
       console.log(response.data);
       // Aquí puedes manejar la respuesta de la API
     } catch (error) {
