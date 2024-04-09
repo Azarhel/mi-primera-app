@@ -1,9 +1,9 @@
 import React from 'react';
 import { CarouselComponent } from '../components/CarouselComponent';
-import Contact from '../components/Contact'; // Este es tu componente de información de contacto
+import Contact from '../components/Contact';
+import ContactoForm from '../components/ContactoForm';
 import PhotographerServices from '../components/PhotographerServices';
 import About from './About';
-import ContactForm from '../components/ContactForm'; // Importa el nuevo componente de formulario de contacto
 
 const Home = () => {
   return (
@@ -11,6 +11,7 @@ const Home = () => {
         <br></br>
         <br></br>
         <div className="text-center">
+          {/* Corrección a text-white para asegurar el color blanco */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">OS-CAR FOTOGRAFÍA</h1>
           <p className="text-lg md:text-xl lg:text-2xl text-white">Expande tu visión a través del mejor lente de fotos.</p>
         </div>
@@ -19,8 +20,8 @@ const Home = () => {
       <CarouselComponent />
       <PhotographerServices />
       <About />
-      <Contact /> {/* Componente existente con información de contacto */}
-      <ContactForm /> {/* Nuevo componente de formulario de contacto para enviar mensajes */}
+      <Contact />
+      <ContactoForm />
     </div>
   );
 };
