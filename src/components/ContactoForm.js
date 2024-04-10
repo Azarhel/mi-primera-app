@@ -19,7 +19,7 @@ const ContactoForm = () => {
   };
 
   return (
-    <div id='acerca de nosotros' className="h-screen flex items-center justify-center">
+    <div id='about' className="h-screen flex items-center justify-center">
       <div className="max-w-lg mx-auto">
         <h2 className="text-3xl font-bold mb-4 text-white">Datos del cliente</h2>
 <form onSubmit={handleSubmit} className="space-y-4">
