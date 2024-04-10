@@ -7,7 +7,7 @@ const Header = () => {
         { name: "Inicio", link: "/" },
        
        { name: "Servicios", link: "#servicios"},
-       { name: "Acércate a nosotros", link: "#about"},
+       { name: "Acércate a nosotros", link: "#acercateanosotros"},
         { name: "Información", link: "#contacto"},
         
         
