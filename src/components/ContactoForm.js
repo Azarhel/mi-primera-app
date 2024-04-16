@@ -24,7 +24,7 @@ const ContactoForm = () => {
     };
 
     try {
-      const urlBase = 'https://api-lyart-theta.vercel.app//api/v1/contacto'
+      const urlBase = 'https://api-lyart-theta.vercel.app/api/v1/contacto'
       const response = await axios.post(
         urlBase,
         datos

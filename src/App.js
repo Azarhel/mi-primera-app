@@ -14,9 +14,6 @@ import { router } from './router/AppRouter';
   crossorigin="anonymous"
 />
 
-/* The following line can be included in your src/index.js or App.js file */
-
-
 
 export function App() {
 
